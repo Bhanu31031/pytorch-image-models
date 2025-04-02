@@ -1,16 +1,3 @@
-"""Run tests for all models
-
-Tests that run on CI should have a specific marker, e.g. @pytest.mark.base. This
-marker is used to parallelize the CI runs, with one runner for each marker.
-
-If new tests are added, ensure that they use one of the existing markers
-(documented in pyproject.toml > pytest > markers) or that a new marker is added
-for this set of tests. If using a new marker, adjust the test matrix in
-.github/workflows/tests.yml to run tests with this new marker, otherwise the
-tests will be skipped on CI.
-
-"""
-
 import pytest
 import torch
 import platform
